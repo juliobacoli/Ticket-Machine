@@ -17,6 +17,7 @@ class Troco {
             result = valor/100;
             count++;
         }
+        
         papeisMoeda[5] = new PapelMoeda(100, result);
         result = 0;
         count = 0;
@@ -25,6 +26,7 @@ class Troco {
             result = valor/50;
             count++;
         }
+        
         papeisMoeda[4] = new PapelMoeda(50, result);
         result = 0;
         count = 0;
@@ -32,6 +34,7 @@ class Troco {
         while (valor % 20 == 0 && count <1) {
             count++;
         }
+        
         papeisMoeda[3] = new PapelMoeda(20, result);
         result = 0;
         count = 0;
@@ -39,6 +42,7 @@ class Troco {
         while (valor % 10 == 0 && count <1) {
             count++;
         }
+        
         papeisMoeda[2] = new PapelMoeda(10, result);
         result = 0;
         count = 0;
@@ -46,6 +50,7 @@ class Troco {
         while (valor % 5 == 0 && count <1) {
             count++;
         }
+        
         papeisMoeda[1] = new PapelMoeda(5, result);
         result = 0;
         count = 0;
@@ -53,6 +58,7 @@ class Troco {
         while (valor % 2 == 0 && count <1) {
             count++;
         }
+        
         papeisMoeda[0] = new PapelMoeda(2, result);
     }
 
